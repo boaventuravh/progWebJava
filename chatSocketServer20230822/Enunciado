@@ -1,2 +1,4 @@
 Criar um sistema de chat usando Sockets e ServerSockets contendo servidor, cliente e interface gráfica
 Deve ser possível estabelecer comunicação entre diferentes clients.
+
+Uma mensagem deve ser transmitida de um client para o server e retransmitida aos demais clients.
