@@ -22,8 +22,12 @@ public class Server {
 		BufferedReader leitor = new BufferedReader(entrada);
 		String mensagem;
 		
+		
+		// ALTERAR A CONDIÇÃO P true
+		// Colocar todo o trecho entre as linhas 17 e 23 para o escopo do laço
 		while ((mensagem = leitor.readLine()) != null ) {
 			System.out.println("Mensagem do client: " + mensagem);
+			mensagem = leitor.readLine();
 		}
 
 	}
