@@ -20,7 +20,11 @@ public class EchoServer {
 			Scanner leitura = new Scanner(newClient.getInputStream());
 			PrintWriter escrita = new PrintWriter(newClient.getOutputStream(), true);
 			String mensagemRecebida = leitura.nextLine();
+			
 			System.out.println("Mensagem recebida: " + mensagemRecebida);
+			
+			mensagemRecebida = mensagemRecebida.toUpperCase();
+			escrita.println(mensagemRecebida);
 		}
 		
 

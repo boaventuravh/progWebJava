@@ -15,6 +15,9 @@ public class EchoClient {
 		PrintWriter escrita = new PrintWriter(client.getOutputStream(), true);
 		
 		escrita.println("Testing, testing, things just got more interesting");
+		
+		String retorno = leitura.nextLine();
+		System.out.println(retorno);
 
 	}
 
